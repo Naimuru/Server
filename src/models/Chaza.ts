@@ -45,6 +45,18 @@ const chazaSchema = new mongoose.Schema(
         type: Number,
       },
     ],
+    QR: [
+      {
+        name:{
+          Type: String,
+          required: false 
+        }, 
+        url:{
+          Type: String,
+          required: false
+        },
+      }
+    ],
   },
   {
     timestamps: true,

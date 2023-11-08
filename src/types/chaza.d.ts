@@ -34,6 +34,7 @@ export interface ChazaUpdateI {
   type: Number;
   phone: String;
   payment_method: Number[];
+  QR: ChazaPago[];
 }
 
 export interface ChazaReadI{
@@ -48,4 +49,9 @@ export interface ChazaReadI{
   score: Number;
   image: String | undefined;
   payment_method: Number[];
+}
+
+export interface ChazaPago{
+  name: String;
+  url: String;
 }
